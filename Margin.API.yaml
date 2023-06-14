@@ -3,7 +3,7 @@ info:
   title: Margins calculation service
   description: Calculates the required margins based on specified parameters for specified accounts
   contact:
-    name: Menahem Elgavia
+    name: Menahem Elgavi
     email: menaheme@tase.co.il
   version: v1
 servers:
