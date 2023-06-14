@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Inso Linting') {
             steps {
-                sh 'home/ec2-user/inso lint spec ./Margin.API.yaml'
+                sh 'inso lint spec ./Margin.API.yaml'
             }
         }
     }
