@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Inso Linting') {
             steps {
-                sh './inso -v'
+                sh 'inso -v'
             }
         }
     }
