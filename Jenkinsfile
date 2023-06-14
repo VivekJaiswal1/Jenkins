@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Inso Linting') {
             steps {
-                sh './inso lint spec ./Margin.API.yaml'
+                sh 'inso lint spec ./Margin.API.yaml'
             }
         }
     }
