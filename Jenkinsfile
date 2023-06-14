@@ -1,7 +1,11 @@
- stages {
-        //Lint the OpenAPI spec using Insomnia CLI
-        stage('Lint OpenAPI Spec') {
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
             steps {
-                sh 'echo a'
+                echo 'Building..'
             }
         }
+    }
+}
