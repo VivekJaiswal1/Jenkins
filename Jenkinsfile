@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Inso version') {
             steps {
-                sh 'inso -v'
+                sh './inso -v'
             }
         }
     }
