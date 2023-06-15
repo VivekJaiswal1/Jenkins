@@ -17,7 +17,7 @@ pipeline {
                 sh 'portal'
             }
         }
-        stage('Inso version') {
+        stage('Inso check version') {
             steps {
                 sh './inso -v'
             }
