@@ -17,7 +17,7 @@ pipeline {
                 sh 'portal'
             }
         }
-        stage('Inso Linting') {
+        stage('Inso version') {
             steps {
                 sh 'inso -v'
             }
