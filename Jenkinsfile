@@ -4,23 +4,33 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Building the application'
             }
         }
-        stage('Deck') {
+        stage('Test') {
             steps {
-                sh 'deck version'
+                echo 'Testing the application'
             }
         }
-        stage('Portal') {
+        stage('Deploy') {
             steps {
-                sh 'portal'
+                echo 'Deploying the application'
             }
         }
-        stage('Inso check version') {
-            steps {
-                sh './inso -v'
-            }
-        }
+        // stage('Deck') {
+        //     steps {
+        //         sh 'deck version'
+        //     }
+        // }
+        // stage('Portal') {
+        //     steps {
+        //         sh 'portal'
+        //     }
+        // }
+        // stage('Inso check version') {
+        //     steps {
+        //         sh './inso -v'
+        //     }
+        // }
     }
 }
